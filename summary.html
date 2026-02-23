@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ملخص الملزمة الذهبية - اللغة العربية | وطني</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap');
+:root{--p:#1a5276;--pl:#2980b9;--acc:#e74c3c;--ok:#27ae60;--warn:#f39c12;--bg:#f0f3f7;--card:#fff;--txt:#2c3e50;--txtl:#7f8c8d;--bdr:#dce1e8;--gold:#f1c40f;--purple:#8e44ad;--teal:#16a085}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Tajawal',sans-serif;background:var(--bg);color:var(--txt);line-height:1.9}
+.hdr{background:linear-gradient(135deg,#1a5276 0%,#2980b9 50%,#16a085 100%);color:#fff;padding:30px 20px;text-align:center;position:sticky;top:0;z-index:1000;box-shadow:0 4px 20px rgba(0,0,0,.2)}
+.hdr h1{font-size:2em;font-weight:900;margin-bottom:5px}
+.hdr p{opacity:.9;font-size:1em}
+.nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:15px}
+.nav a{color:#fff;text-decoration:none;padding:6px 16px;border-radius:20px;background:rgba(255,255,255,.15);font-size:.9em;font-weight:600;transition:.3s;border:1px solid rgba(255,255,255,.3)}
+.nav a:hover,.nav a.active{background:rgba(255,255,255,.3)}
+.container{max-width:900px;margin:0 auto;padding:20px}
+.chapter{margin-bottom:30px}
+.ch-title{font-size:1.6em;font-weight:900;padding:15px 25px;border-radius:16px;margin-bottom:20px;display:flex;align-items:center;gap:12px;color:#fff}
+.ch1 .ch-title{background:linear-gradient(135deg,#1a5276,#2980b9)}
+.ch2 .ch-title{background:linear-gradient(135deg,#8e44ad,#9b59b6)}
+.ch3 .ch-title{background:linear-gradient(135deg,#16a085,#1abc9c)}
+.ch4 .ch-title{background:linear-gradient(135deg,#d35400,#e67e22)}
+.ch5 .ch-title{background:linear-gradient(135deg,#c0392b,#e74c3c)}
+.section{background:var(--card);border-radius:16px;margin-bottom:16px;box-shadow:0 2px 12px rgba(0,0,0,.06);overflow:hidden;border-right:5px solid var(--p)}
+.ch2 .section{border-right-color:var(--purple)}
+.ch3 .section{border-right-color:var(--teal)}
+.ch4 .section{border-right-color:#d35400}
+.ch5 .section{border-right-color:var(--acc)}
+.sec-head{padding:16px 22px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:1.15em;transition:.3s;user-select:none}
+.sec-head:hover{background:#f8f9fb}
+.sec-head .arrow{transition:transform .3s;font-size:1.2em}
+.sec-head.open .arrow{transform:rotate(180deg)}
+.sec-body{padding:0 22px 20px;display:none}
+.sec-body.show{display:block;animation:fadeIn .3s}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
+.rule{background:#f0f7ff;border-radius:12px;padding:14px 18px;margin:10px 0;border-right:4px solid var(--pl)}
+.rule.green{background:#e8f8ef;border-right-color:var(--ok)}
+.rule.orange{background:#fef5e7;border-right-color:var(--warn)}
+.rule.purple{background:#f5eef8;border-right-color:var(--purple)}
+.rule.red{background:#fde8e8;border-right-color:var(--acc)}
+.rule h4{margin-bottom:6px;color:var(--p);font-size:1.05em}
+.rule.green h4{color:var(--ok)}
+.rule.orange h4{color:#d35400}
+.rule.purple h4{color:var(--purple)}
+.rule.red h4{color:var(--acc)}
+.ex{display:inline-block;background:#fff;border:1px solid var(--bdr);padding:3px 12px;border-radius:8px;margin:3px;font-weight:600;color:var(--p);font-size:.95em}
+.tag{display:inline-block;padding:3px 12px;border-radius:15px;font-size:.85em;font-weight:700;margin:3px}
+.tag-blue{background:#dbeafe;color:#1e40af}
+.tag-green{background:#d1fae5;color:#065f46}
+.tag-red{background:#fee2e2;color:#991b1b}
+.tag-purple{background:#ede9fe;color:#5b21b6}
+.tag-orange{background:#ffedd5;color:#9a3412}
+.tag-teal{background:#ccfbf1;color:#134e4a}
+table{width:100%;border-collapse:collapse;margin:10px 0;border-radius:12px;overflow:hidden}
+th{background:var(--p);color:#fff;padding:10px 14px;font-weight:700;text-align:right}
+.ch2 th{background:var(--purple)}
+.ch3 th{background:var(--teal)}
+.ch4 th{background:#d35400}
+td{padding:10px 14px;border-bottom:1px solid var(--bdr);background:#fff}
+tr:nth-child(even) td{background:#f8f9fb}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+.mini-card{background:#f8f9fb;border-radius:10px;padding:12px;text-align:center;border:1px solid var(--bdr)}
+.mini-card .icon{font-size:1.5em;margin-bottom:5px}
+.mini-card .label{font-weight:700;color:var(--p);font-size:.95em}
+.mini-card .desc{font-size:.85em;color:var(--txtl)}
+.tip{background:#fffbeb;border-radius:10px;padding:12px 16px;border-right:4px solid var(--gold);margin:10px 0;font-size:.95em}
+.tip::before{content:'💡 ';font-weight:700}
+.key{font-weight:800;color:var(--acc);background:#fee2e2;padding:1px 8px;border-radius:5px;font-size:.9em}
+.formula{background:#1a5276;color:#fff;padding:10px 16px;border-radius:10px;text-align:center;font-weight:700;font-size:1.1em;margin:10px 0;letter-spacing:1px}
+.ch2 .formula{background:var(--purple)}
+b{color:var(--p)}
+.footer{text-align:center;padding:30px;color:var(--txtl);font-size:.9em;border-top:2px solid var(--bdr);margin-top:30px}
+.search-box{display:flex;justify-content:center;margin:15px 0}
+.search-box input{width:100%;max-width:500px;padding:12px 20px;border:2px solid var(--bdr);border-radius:12px;font-family:'Tajawal';font-size:1em;outline:none;transition:.3s}
+.search-box input:focus{border-color:var(--pl);box-shadow:0 0 0 3px rgba(41,128,185,.15)}
+.back-link{display:inline-flex;align-items:center;gap:6px;color:#fff;text-decoration:none;background:rgba(255,255,255,.2);padding:6px 16px;border-radius:20px;font-size:.85em;margin-top:8px;transition:.3s;border:1px solid rgba(255,255,255,.3)}
+.back-link:hover{background:rgba(255,255,255,.35)}
+@media(max-width:600px){.hdr h1{font-size:1.5em}.grid2,.grid3{grid-template-columns:1fr}.container{padding:12px}.sec-head{font-size:1em;padding:14px 16px}.sec-body{padding:0 16px 16px}}
+</style>
+</head>
+<body>
+<div class="hdr">
+<h1>📚 ملخص الملزمة الذهبية</h1>
+<p>اللغة العربية - الامتحان الوطني | الأستاذ ضياء العامري</p>
+<a href="index.html" class="back-link">← الرجوع للامتحان</a>
+<div class="nav" id="mainNav">
+<a href="#ch1" class="active">النحو</a>
+<a href="#ch2">الصرف</a>
+<a href="#ch3">الأدب</a>
+<a href="#ch4">البلاغة</a>
+<a href="#ch5">معلومات عامة</a>
+</div>
+</div>
+
+<div class="container">
+<div class="search-box"><input type="text" id="searchInput" placeholder="🔍 ابحث في الملخص..." oninput="filterSections(this.value)"></div>
+
+<!-- ═══════════════ الفصل الأول: النحو ═══════════════ -->
+<div class="chapter ch1" id="ch1">
+<div class="ch-title">📖 الفصل الأول: النحو</div>
+
+<div class="section" data-keywords="أقسام الكلام اسم فعل حرف">
+<div class="sec-head" onclick="toggle(this)">أقسام الكلام <span class="arrow">▼</span></div>
+<div class="sec-body">
+<div class="grid3">
+<div class="mini-card"><div class="icon">📝</div><div class="label">الاسم</div><div class="desc">دلّ على معنى في نفسه ولم يقترن بزمن</div></div>
+<div class="mini-card"><div class="icon">⚡</div><div class="label">الفعل</div><div class="desc">دلّ على معنى في نفسه واقترن بزمن</div></div>
+<div class="mini-card"><div class="icon">🔗</div><div class="label">الحرف</div><div class="desc">دلّ على معنى في غيره</div></div>
+</div>
+<div class="rule green">
+<h4>علامات الاسم (5 علامات):</h4>
+<span class="tag tag-blue">ال التعريف</span>
+<span class="tag tag-green">يا النداء</span>
+<span class="tag tag-purple">الجر</span>
+<span class="tag tag-orange">التنوين</span>
+<span class="tag tag-teal">الإسناد</span>
+<br>مثال: <span class="ex">الكتاب</span> <span class="ex">يا محمد</span> <span class="ex">في البيت</span> <span class="ex">كتابٌ</span>
+</div>
+</div>
+</div>
+
+<div class="section" data-keywords="علامات الإعراب أصلية فرعية رفع نصب جر جزم">
+<div class="sec-head" onclick="toggle(this)">علامات الإعراب (أصلية وفرعية) <span class="arrow">▼</span></div>
+<div class="sec-body">
+<div class="rule">
+<h4>العلامات الأصلية:</h4>
+<table><tr><th>الحالة</th><th>العلامة</th><th>تستخدم مع</th></tr>
+<tr><td><b>الرفع</b></td><td><span class="key">الضمة</span></td><td>الاسم المفرد / جمع التكسير / جمع المؤنث السالم / المضارع</td></tr>
+<tr><td><b>النصب</b></td><td><span class="key">الفتحة</span></td><td>الاسم المفرد (مفعول به، حال، تمييز، خبر كان، اسم إنّ...)</td></tr>
+<tr><td><b>الجر</b></td><td><span class="key">الكسرة</span></td><td>الاسم المجرور بحرف جر / جمع التكسير / جمع المؤنث</td></tr>
+</table>
+</div>
+<div class="rule purple">
+<h4>العلامات الفرعية:</h4>
+<table><tr><th>الحالة</th><th>العلامة</th><th>تستخدم مع</th></tr>
+<tr><td>رفع</td><td><span class="tag tag-blue">الواو</span></td><td>جمع مذكر سالم + الأسماء الخمسة</td></tr>
+<tr><td>رفع</td><td><span class="tag tag-blue">الألف</span></td><td>المثنى</td></tr>
+<tr><td>رفع</td><td><span class="tag tag-blue">ثبوت النون</span></td><td>الأفعال الخمسة</td></tr>
+<tr><td>نصب</td><td><span class="tag tag-green">الياء</span></td><td>المثنى + جمع المذكر السالم</td></tr>
+<tr><td>نصب</td><td><span class="tag tag-green">الألف</span></td><td>الأسماء الخمسة</td></tr>
+<tr><td>نصب</td><td><span class="tag tag-green">الكسرة</span></td><td>جمع المؤنث السالم</td></tr>
+<tr><td>نصب</td><td><span class="tag tag-green">حذف النون</span></td><td>الأفعال الخمسة</td></tr>
+<tr><td>جر</td><td><span class="tag tag-red">الياء</span></td><td>المثنى + جمع مذكر سالم + الأسماء الخمسة</td></tr>
+<tr><td>جر</td><td><span class="tag tag-red">الفتحة</span></td><td>الممنوع من الصرف</td></tr>
+<tr><td>جزم</td><td><span class="tag tag-purple">حذف حرف العلة</span></td><td>المضارع المعتل الآخر</td></tr>
+<tr><td>جزم</td><td><span class="tag tag-purple">حذف النون</span></td><td>الأفعال الخمسة</td></tr>
+</table>
+</div>
+</div>
+</div>
+
+<div class="section" data-keywords="الفعل الماضي المضارع الأمر بناء">
+<div class="sec-head" onclick="toggle(this)">أنواع الفعل وبناؤه <span class="arrow">▼</span></div>
+<div class="sec-body">
+<div class="grid3">
+<div class="mini-card"><div class="icon">⏪</div><div class="label">الماضي</div><div class="desc">كتبَ - قرأَ - ذهبَ</div></div>
+<div class="mini-card"><div class="icon">⏺️</div><div class="label">المضارع</div><div class="desc">يكتبُ - يقرأُ - يذهبُ<br>يبدأ بـ: أ ن ت ي</div></div>
+<div class="mini-card"><div class="icon">▶️</div><div class="label">الأمر</div><div class="desc">اكتبْ - اقرأْ - اذهبْ</div></div>
+</div>
+<div class="rule">
+<h4>بناء الفعل الماضي:</h4>
+<span class="tag tag-blue">على الفتح ←</span> لم يتصل به شيء / تاء التأنيث / ألف الاثنين<br>
+<span class="tag tag-green">على السكون ←</span> تاء الفاعل / نون النسوة / نا الفاعلين<br>
+<span class="tag tag-purple">على الضم ←</span> واو الجماعة
+</div>
+<div class="rule orange">
+<h4>المضارع - 3 حالات:</h4>
+<span class="tag tag-blue">مرفوع ←</span> لم يسبقه ناصب أو جازم<br>
+<span class="tag tag-green">منصوب ←</span> سبقه: <span class="ex">أنْ</span> <span class="ex">لنْ</span> <span class="ex">كي</span> <span class="ex">إذن</span><br>
+<span class="tag tag-red">مجزوم ←</span> سبقه: <span class="ex">لم</span> <span class="ex">لمّا</span> <span class="ex">لام الأمر</span> <span class="ex">لا الناهية</span>
+</div>
+<div class="rule">
+<h4>بناء المضارع:</h4>
+<span class="tag tag-blue">على السكون ←</span> نون النسوة (يكتبْنَ)<br>
+<span class="tag tag-green">على الفتح ←</span> نون التوكيد (ليكتبَنَّ)
+</div>
+<div class="tip">الأفعال الخمسة = كل مضارع اتصل به: ألف الاثنين أو واو الجماعة أو ياء المخاطبة. تُرفع بثبوت النون وتُنصب وتُجزم بحذفها.</div>
+</div>
+</div>
+
+<div class="section" data-keywords="المبتدأ الخبر الجملة الاسمية">
+<div class="sec-head" onclick="toggle(this)">المبتدأ والخبر <span class="arrow">▼</span></div>
+<div class="sec-body">
+<div class="rule">
+<h4>المبتدأ: اسم مرفوع تبدأ به الجملة الاسمية</h4>
+يكون: <span class="tag tag-blue">اسماً ظاهراً</span> محمدٌ مجتهدٌ |
+<span class="tag tag-green">ضميراً منفصلاً</span> أنتَ طالبٌ |
+<span class="tag tag-purple">مصدراً مؤولاً</span> أن تصوموا خيرٌ لكم
+</div>
+<div class="rule green">
+<h4>الخبر: ما يُخبر به عن المبتدأ (مرفوع دائماً)</h4>
+<span class="tag tag-blue">مفرد</span> محمدٌ مجتهدٌ |
+<span class="tag tag-green">جملة اسمية</span> العلمُ فوائدُه عظيمةٌ |
+<span class="tag tag-purple">جملة فعلية</span> الطالبُ يذاكرُ |
+<span class="tag tag-orange">شبه جملة</span> الكتابُ على الطاولةِ
+</div>
+</div>
+</div>
+
+<div class="section" data-keywords="كان أخواتها النواسخ أصبح أمسى ظل بات صار ليس">
+<div class="sec-head" onclick="toggle(this)">كان وأخواتها <span class="arrow">▼</span></div>
+<div class="sec-body">
+<div class="formula">كان وأخواتها ← تَرفع المبتدأ (اسمها) وتَنصب الخبر (خبرها)</div>
+<div class="rule">
+<span class="ex">كان</span> <span class="ex">أصبح</span> <span class="ex">أمسى</span> <span class="ex">أضحى</span> <span class="ex">ظلّ</span> <span class="ex">بات</span> <span class="ex">صار</span> <span class="ex">ليس</span><br>
+<span class="ex">ما زال</span> <span class="ex">ما فتئ</span> <span class="ex">ما برح</span> <span class="ex">ما انفكّ</span> <span class="ex">ما دام</span><br><br>
+مثال: كان <b>الجوُّ</b> <span class="key">جميلاً</span> (الجو = اسم كان مرفوع / جميلاً = خبر كان منصوب)
+</div>
+</div>
+</div>
+
+<div class="section" data-keywords="إن أخواتها أنّ كأنّ لكنّ ليت لعلّ">
+<div class="sec-head" onclick="toggle(this)">إنّ وأخواتها <span class="arrow">▼</span></div>
+<div class="sec-body">
+<div class="formula">إنّ وأخواتها ← تَنصب المبتدأ (اسمها) وتَرفع الخبر (خبرها)</div>
+<table><tr><th>الحرف</th><th>المعنى</th><th>المثال</th></tr>
+<tr><td><b>إنَّ</b></td><td>التوكيد</td><td>إنَّ العلمَ نورٌ</td></tr>
+<tr><td><b>أنَّ</b></td><td>التوكيد (وسط الجملة)</td><td>علمتُ أنَّ الحقَّ منتصرٌ</td></tr>
+<tr><td><b>كأنَّ</b></td><td>التشبيه</td><td>كأنَّ القمرَ مكتملٌ</td></tr>
+<tr><td><b>لكنَّ</b></td><td>الاستدراك</td><td>الشمسُ مشرقةٌ لكنَّ الجوَّ باردٌ</td></tr>
+<tr><td><b>لعلَّ</b></td><td>الترجّي</td><td>لعلَّ المطرَ نازلٌ</td></tr>
+<tr><td><b>ليتَ</b></td><td>التمنّي</td><td>ليتَ الشبابَ يعودُ</td></tr>
+</table>
+</div>
+</div>
+
+<div class="section" data-keywords="المفاعيل مفعول به مطلق فيه لأجله معه">
+<div class="sec-head" onclick="toggle(this)">المفاعيل الخمسة <span class="arrow">▼</span></div>
+<div class="sec-body">
+<table><tr><th>النوع</th><th>التعريف</th><th>المثال</th></tr>
+<tr><td><b>المفعول به</b></td><td>ما وقع عليه فعل الفاعل</td><td>قرأ الطالبُ <span class="key">الكتابَ</span></td></tr>
+<tr><td><b>المفعول المطلق</b></td><td>مصدر يؤكد الفعل أو يبين نوعه</td><td>فهمتُ <span class="key">فهماً</span> / سار <span class="key">سيراً حسناً</span></td></tr>
+<tr><td><b>المفعول فيه</b></td><td>ظرف زمان أو مكان</td><td>سافر <span class="key">صباحاً</span> / وقفت <span class="key">أمامَ</span> الباب</td></tr>
+<tr><td><b>المفعول لأجله</b></td><td>سبب وقوع الفعل</td><td>درستُ <span class="key">حرصاً</span> على النجاح</td></tr>
+<tr><td><b>المفعول معه</b></td><td>بعد واو بمعنى "مع"</td><td>سرتُ <span class="key">والنهرَ</span></td></tr>
+</table>
+<div class="tip">الحال = الجواب عن سؤال "كيف؟" → رأيتُ الطفلَ <b>ضاحكاً</b> (كيف رأيته؟ ضاحكاً)<br>التمييز = الجواب عن سؤال "ماذا؟" → اشتريتُ قنطاراً <b>قطناً</b></div>
+</div>
+</div>
+
+<div class="section" data-keywords="الحال التمييز">
+<div class="sec-head" onclick="toggle(this)">الحال والتمييز <span class="arrow">▼</span></div>
+<div class="sec-body">
+<div class="grid2">
+<div class="rule">
+<h4>الحال (منصوب دائماً)</h4>
+يبيّن هيئة صاحبه عند وقوع الفعل<br>
+أنواعه: <span class="tag tag-blue">مفردة</span> جاء مبتسماً |
+<span class="tag tag-green">جملة</span> خرجتُ والمطرُ يهطل |
+<span class="tag tag-purple">شبه جملة</span> رأيتُ الأسدَ في القفص
+</div>
+<div class="rule orange">
+<h4>التمييز (منصوب)</h4>
+يُزيل الإبهام عن كلمة قبله<br>
+<span class="tag tag-blue">تمييز ذات</span> (بعد أعداد/مقادير): ثلاثون <b>طالباً</b><br>
+<span class="tag tag-green">تمييز نسبة</span> (يوضح الجملة): فاض البئرُ <b>ماءً</b>
+</div>
+</div>
+</div>
+</div>
+
+<div class="section" data-keywords="التوابع النعت الصفة التوكيد العطف البدل">
+<div class="sec-head" onclick="toggle(this)">التوابع الأربعة <span class="arrow">▼</span></div>
+<div class="sec-body">
+<div class="rule"><h4>1. النعت (الصفة)</h4>يأتي لبيان صفة في الاسم الذي يتبعه<br>مثال: جاء الرجلُ <span class="key">الكريمُ</span></div>
+<div class="rule green"><h4>2. التوكيد</h4>
+<span class="tag tag-blue">لفظي</span> = تكرار الكلمة: جاء جاء المعلمُ<br>
+<span class="tag tag-purple">معنوي</span> = بألفاظ: <span class="ex">نفسه</span> <span class="ex">عينه</span> <span class="ex">كلّهم</span><br>
+مثال: جاء الطالبُ <span class="key">نفسُه</span></div>
+<div class="rule orange"><h4>3. العطف</h4>
+حروف العطف: <span class="ex">الواو</span> <span class="ex">الفاء</span> <span class="ex">ثمّ</span> <span class="ex">أو</span><br>
+<b>الواو</b> = مشاركة | <b>الفاء</b> = ترتيب مع تعقيب | <b>ثمّ</b> = ترتيب مع تراخي</div>
+<div class="rule purple"><h4>4. البدل</h4>يحلّ محل الاسم الذي يسبقه<br>مثال: زارني صديقي <span class="key">أحمدُ</span></div>
+</div>
+</div>
+
+<div class="section" data-keywords="لا أنواع لا نافية ناهية عاطفة نافية للجنس">
+<div class="sec-head" onclick="toggle(this)">أنواع "لا" <span class="arrow">▼</span></div>
+<div class="sec-body">
+<table><tr><th>النوع</th><th>عملها</th><th>المثال</th></tr>
+<tr><td>النافية</td><td>تنفي الفعل بدون تأثير على الإعراب</td><td>لا يكتبُ الطالبُ</td></tr>
+<tr><td>الناهية</td><td>تجزم المضارع</td><td>لا تكتبْ على الجدار</td></tr>
+<tr><td>العاطفة</td><td>تربط كلمتين مسبوقة بكلام مثبت</td><td>جاء محمدٌ لا عليٌّ</td></tr>
+<tr><td>النافية للجنس</td><td>تنفي عن جميع أفراد الجنس (عمل إنّ)</td><td>لا طالبَ مقصّرٌ</td></tr>
+<tr><td>الزائدة</td><td>لتوكيد النفي</td><td>ما جاء أحدٌ ولا رجلٌ</td></tr>
+</table>
+</div>
+</div>
+
+<div class="section" data-keywords="ما أنواع ما موصولة استفهامية شرطية تعجبية نافية">
+<div class="sec-head" onclick="toggle(this)">أنواع "ما" <span class="arrow">▼</span></div>
+<div class="sec-body">
+<div class="grid2">
+<div class="rule"><h4>الاسمية:</h4>
+<span class="tag tag-blue">موصولة</span> = بمعنى "الذي"<br>
+<span class="tag tag-green">استفهامية</span> = للسؤال<br>
+<span class="tag tag-purple">شرطية</span> = تربط جملتين<br>
+<span class="tag tag-orange">تعجبية</span> = ما أجملَ!<br>
+</div>
+<div class="rule green"><h4>الحرفية:</h4>
+<span class="tag tag-red">نافية</span> = تنفي الجملة<br>
+<span class="tag tag-blue">مصدرية</span> = تحول الفعل لمصدر<br>
+<span class="tag tag-purple">زائدة</span> = إنّما المؤمنون إخوة<br>
+<span class="tag tag-orange">كافّة</span> = توقف عمل إنّ<br>
+<span class="tag tag-teal">ظرفية</span> = ما دمتُ حياً<br>
+</div>
+</div>
+</div>
+</div>
+
+<div class="section" data-keywords="الفاعل نائب الفاعل مبني للمجهول">
+<div class="sec-head" onclick="toggle(this)">الفاعل ونائب الفاعل <span class="arrow">▼</span></div>
+<div class="sec-body">
+<div class="grid2">
+<div class="rule"><h4>الفاعل</h4>من قام بالفعل (مرفوع دائماً)<br>كتبَ <span class="key">الطالبُ</span> الدرسَ</div>
+<div class="rule green"><h4>نائب الفاعل</h4>يحل محل الفاعل المحذوف (مرفوع)<br>كُتِبَ <span class="key">الدرسُ</span></div>
+</div>
+<div class="tip">بناء الفعل للمجهول: الماضي = ضم أوله وكسر ما قبل آخره (كَتَبَ ← كُتِبَ) | المضارع = ضم أوله وفتح ما قبل آخره (يَكتُبُ ← يُكتَبُ)</div>
+</div>
+</div>
+
+<div class="section" data-keywords="حروف الجر من إلى عن على في الباء اللام الكاف">
+<div class="sec-head" onclick="toggle(this)">حروف الجر ومعانيها <span class="arrow">▼</span></div>
+<div class="sec-body">
+<table><tr><th>الحرف</th><th>أهم المعاني</th><th>مثال</th></tr>
+<tr><td><b>مِن</b></td><td>ابتداء الغاية / التبعيض / السببية</td><td>سافرتُ من بغداد / أكلتُ من الرغيف</td></tr>
+<tr><td><b>إلى</b></td><td>انتهاء الغاية</td><td>سافرتُ إلى البصرة</td></tr>
+<tr><td><b>عن</b></td><td>المجاوزة / البعد</td><td>ابتعد عن الطريق</td></tr>
+<tr><td><b>على</b></td><td>الاستعلاء / الظرفية</td><td>الكتاب على الطاولة</td></tr>
+<tr><td><b>في</b></td><td>الظرفية المكانية أو الزمانية</td><td>الكتاب في الحقيبة</td></tr>
+<tr><td><b>الباء</b></td><td>الإلصاق / الاستعانة / السببية</td><td>كتبتُ بالقلم (استعانة)</td></tr>
+<tr><td><b>اللام</b></td><td>الملكية / التعليل</td><td>هذا الكتاب لزيدٍ</td></tr>
+<tr><td><b>الكاف</b></td><td>التشبيه / التوكيد</td><td>أنتَ كالبدر (تشبيه)</td></tr>
+</table>
+</div>
+</div>
+
+<div class="section" data-keywords="الأسماء الخمسة أب أخ حم فو ذو">
+<div class="sec-head" onclick="toggle(this)">الأسماء الخمسة <span class="arrow">▼</span></div>
+<div class="sec-body">
+<div class="formula">أب - أخ - حم - فو - ذو → تُرفع بالواو وتُنصب بالألف وتُجر بالياء</div>
+<table><tr><th>الحالة</th><th>العلامة</th><th>المثال</th></tr>
+<tr><td>الرفع</td><td>الواو</td><td>جاء أبـ<span class="key">و</span>ك</td></tr>
+<tr><td>النصب</td><td>الألف</td><td>رأيتُ أبـ<span class="key">ا</span>ك</td></tr>
+<tr><td>الجر</td><td>الياء</td><td>سلّمتُ على أبـ<span class="key">ي</span>ك</td></tr>
+</table>
+</div>
+</div>
+
+<div class="section" data-keywords="أسلوب الشرط أدوات الشرط جازمة غير جازمة إن من ما لو لولا إذا">
+<div class="sec-head" onclick="toggle(this)">أسلوب الشرط <span class="arrow">▼</span></div>
+<div class="sec-body">
+<div class="grid2">
+<div class="rule">
+<h4>أدوات الشرط الجازمة</h4>
+(تجزم فعلين: فعل الشرط وجوابه)<br>
+<span class="ex">إنْ</span> حرف شرط |
+<span class="ex">مَن</span> للعاقل |
+<span class="ex">ما</span> لغير العاقل |
+<span class="ex">متى</span> للزمان |
+<span class="ex">أينما</span> للمكان<br>
+مثال: إنْ تدرسْ تنجحْ
+</div>
+<div class="rule orange">
+<h4>أدوات الشرط غير الجازمة</h4>
+<span class="ex">لو</span> = امتناع لامتناع |
+<span class="ex">لولا</span> = امتناع لوجود |
+<span class="ex">إذا</span> = ظرف زمان |
+<span class="ex">كلّما</span> = تكرار |
+<span class="ex">أمّا</span> = تفصيل<br>
+مثال: لو درستَ لنجحتَ
+</div>
+</div>
+</div>
+</div>
+
+<div class="section" data-keywords="الضمائر منفصل متصل مستتر رفع نصب جر">
+<div class="sec-head" onclick="toggle(this)">الضمائر <span class="arrow">▼</span></div>
+<div class="sec-body">
+<div class="rule"><h4>ضمائر الرفع المنفصلة:</h4>
+<span class="tag tag-blue">متكلم</span> أنا / نحن |
+<span class="tag tag-green">مخاطب</span> أنتَ / أنتِ / أنتما / أنتم / أنتنّ |
+<span class="tag tag-purple">غائب</span> هو / هي / هما / هم / هنّ</div>
+<div class="rule green"><h4>ضمائر النصب المنفصلة:</h4>
+<span class="ex">إيّاي</span> <span class="ex">إيّانا</span> <span class="ex">إيّاكَ</span> <span class="ex">إيّاكِ</span> <span class="ex">إيّاهُ</span> <span class="ex">إيّاها</span>...</div>
+<div class="tip">الضمائر المنفصلة في بداية الجملة تُعرب مبتدأ (أنتَ طالبٌ)<br>إيّاك = ضمير منفصل في محل نصب</div>
+</div>
+</div>
+
+<div class="section" data-keywords="أسلوب التحذير الإغراء الاختصاص">
+<div class="sec-head" onclick="toggle(this)">أسلوب التحذير والاختصاص <span class="arrow">▼</span></div>
+<div class="sec-body">
+<div class="rule red"><h4>التحذير:</h4>تنبيه المخاطب على أمر مكروه ليتجنبه<br>
+<span class="ex">إيّاك والأسدَ</span> | <span class="ex">الكسلَ الكسلَ</span> | <span class="ex">إيّاك من الإهمال</span></div>
+<div class="rule green"><h4>الاختصاص:</h4>بيان المقصود من ضمير المتكلم أو المخاطب<br>
+نحن - <span class="key">العربَ</span> - نعتزّ بتاريخنا (العرب = مفعول به لفعل محذوف تقديره "أخصّ")</div>
+</div>
+</div>
+
+</div>
+
+<!-- ═══════════════ الفصل الثاني: الصرف ═══════════════ -->
+<div class="chapter ch2" id="ch2">
+<div class="ch-title">⚙️ الفصل الثاني: الصرف</div>
+
+<div class="section" data-keywords="الميزان الصرفي وزن فعل">
+<div class="sec-head" onclick="toggle(this)">الميزان الصرفي <span class="arrow">▼</span></div>
+<div class="sec-body">
+<div class="formula">الكلمة الأساسية للوزن = فَعَلَ (ف = أول حرف أصلي، ع = ثاني، ل = ثالث)</div>
+<div class="rule">
+كِتابة ← أصلها كَتَبَ (فَعَلَ) + الألف والتاء المربوطة زائدة = فِعَالة<br>
+قُمْ ← أصلها قامَ (فَعَلَ) حُذف حرف العلة = فُلْ<br>
+دَحرجَ ← رباعي = فَعلَلَ | سَفَرجل ← خماسي = فَعَلَّل
+</div>
+</div>
+</div>
+
+<div class="section" data-keywords="اسم الفاعل اسم المفعول">
+<div class="sec-head" onclick="toggle(this)">اسم الفاعل واسم المفعول <span class="arrow">▼</span></div>
+<div class="sec-body">
+<div class="grid2">
+<div class="rule">
+<h4>اسم الفاعل (مَن قام بالفعل)</h4>
+<b>من الثلاثي:</b> وزن <span class="key">فاعِل</span><br>
+كَتَبَ ← كاتِب | فَهِمَ ← فاهِم<br><br>
+<b>من غير الثلاثي:</b> ضم أوله + كسر ما قبل آخره<br>
+استخرجَ ← مُستخرِج | انطلقَ ← مُنطلِق
+</div>
+<div class="rule purple">
+<h4>اسم المفعول (مَن وقع عليه الفعل)</h4>
+<b>من الثلاثي:</b> وزن <span class="key">مفعول</span><br>
+ضَرَبَ ← مضروب | فَهِمَ ← مفهوم<br><br>
+<b>من غير الثلاثي:</b> ضم أوله + فتح ما قبل آخره<br>
+استخرجَ ← مُستخرَج | انطلقَ ← مُنطلَق
+</div>
+</div>
+<div class="tip">في غير الثلاثي: الفرق بين اسم الفاعل واسم المفعول = كسر ما قبل الآخر (فاعل) أو فتحه (مفعول)</div>
+</div>
+</div>
+
+<div class="section" data-keywords="الصفة المشبهة صيغة المبالغة اسم التفضيل">
+<div class="sec-head" onclick="toggle(this)">الصفة المشبهة وصيغة المبالغة واسم التفضيل <span class="arrow">▼</span></div>
+<div class="sec-body">
+<div class="rule">
+<h4>الصفة المشبهة (صفة ثابتة)</h4>
+أوزانها: <span class="ex">فَعيل</span> كريم | <span class="ex">فَعلان</span> جوعان | <span class="ex">أفعَل</span> أحمر | <span class="ex">فَعَل</span> حَسَن | <span class="ex">فَعِل</span> فَرِح
+</div>
+<div class="rule purple">
+<h4>صيغة المبالغة (كثرة وشدة)</h4>
+<span class="ex">فَعّال</span> ضرّاب | <span class="ex">مِفعال</span> مِعطاء | <span class="ex">فَعول</span> غفور | <span class="ex">فَعيل</span> رحيم | <span class="ex">فِعِّيل</span> سِكِّير
+</div>
+<div class="rule orange">
+<h4>اسم التفضيل</h4>
+وزنه: <span class="key">أَفعَل</span> للمذكر و<span class="key">فُعلى</span> للمؤنث<br>
+مثال: أكبر / كُبرى | أجمل / جُملى
+</div>
+</div>
+</div>
+
+<div class="section" data-keywords="الفعل الصحيح المعتل سالم مهموز مضعف مثال أجوف ناقص لفيف">
+<div class="sec-head" onclick="toggle(this)">الفعل الصحيح والمعتل <span class="arrow">▼</span></div>
+<div class="sec-body">
+<div class="grid2">
+<div class="rule">
+<h4>الصحيح (خالٍ من حروف العلة)</h4>
+<span class="tag tag-blue">سالم</span> كَتَبَ - جَلَسَ<br>
+<span class="tag tag-green">مهموز</span> أخذَ - سألَ - قرأَ<br>
+<span class="tag tag-purple">مضعّف</span> مدَّ - شدَّ - زلزلَ
+</div>
+<div class="rule orange">
+<h4>المعتل (فيه حرف علة: ا و ي)</h4>
+<span class="tag tag-blue">مثال</span> (أوله) وَصَلَ - وَقَفَ<br>
+<span class="tag tag-green">أجوف</span> (وسطه) قامَ - نامَ<br>
+<span class="tag tag-purple">ناقص</span> (آخره) دعا - رمى<br>
+<span class="tag tag-red">لفيف مفروق</span> وَفَى - وَعَى<br>
+<span class="tag tag-orange">لفيف مقرون</span> رَوَى - شَوَى
+</div>
+</div>
+</div>
+</div>
+
+<div class="section" data-keywords="الممنوع من الصرف">
+<div class="sec-head" onclick="toggle(this)">الممنوع من الصرف <span class="arrow">▼</span></div>
+<div class="sec-body">
+<div class="formula">الممنوع من الصرف = لا يقبل التنوين + يُجر بالفتحة بدل الكسرة</div>
+<div class="rule red">
+<h4>يُمنع لعلة واحدة:</h4>
+<span class="tag tag-blue">صيغة منتهى الجموع</span> مساجد - مصابيح<br>
+<span class="tag tag-green">ألف التأنيث المقصورة</span> ليلى - سلوى<br>
+<span class="tag tag-purple">ألف التأنيث الممدودة</span> حسناء - صحراء
+</div>
+<div class="rule orange">
+<h4>يُمنع لعلتين (العلمية +):</h4>
+<span class="tag tag-blue">التأنيث</span> فاطمة - مريم |
+<span class="tag tag-green">العجمة</span> إبراهيم - إسماعيل |
+<span class="tag tag-purple">وزن الفعل</span> أحمد - يزيد |
+<span class="tag tag-red">التركيب</span> بعلبك |
+<span class="tag tag-orange">الزيادة بألف ونون</span> عثمان - رمضان |
+<span class="tag tag-teal">العدل</span> عُمَر
+</div>
+<div class="rule green">
+<h4>الوصفية +:</h4>
+<span class="tag tag-blue">وزن أفعل</span> أحمر - أكبر |
+<span class="tag tag-green">وزن فَعلان</span> عطشان - جوعان
+</div>
+<div class="tip">إذا كان الممنوع من الصرف مضافاً أو معرّفاً بأل → يُجر بالكسرة!</div>
+</div>
+</div>
+
+<div class="section" data-keywords="المقصور المنقوص الممدود">
+<div class="sec-head" onclick="toggle(this)">الاسم المقصور والمنقوص والممدود <span class="arrow">▼</span></div>
+<div class="sec-body">
+<table><tr><th>النوع</th><th>التعريف</th><th>الإعراب</th><th>المثال</th></tr>
+<tr><td><b>المقصور</b></td><td>آخره ألف لازمة</td><td>حركات مقدّرة للتعذر (رفع+نصب+جر)</td><td>فتى - مستشفى</td></tr>
+<tr><td><b>المنقوص</b></td><td>آخره ياء لازمة مكسور ما قبلها</td><td>ضمة مقدرة (رفع) / فتحة ظاهرة (نصب) / كسرة مقدرة (جر)</td><td>القاضي - الداعي</td></tr>
+<tr><td><b>الممدود</b></td><td>آخره همزة قبلها ألف زائدة</td><td>حركات ظاهرة</td><td>صحراء - سماء</td></tr>
+</table>
+</div>
+</div>
+
+</div>
+
+<!-- ═══════════════ الفصل الثالث: الأدب ═══════════════ -->
+<div class="chapter ch3" id="ch3">
+<div class="ch-title">🎭 الفصل الثالث: الأدب العربي</div>
+
+<div class="section" data-keywords="المعلقات الجاهلي امرؤ القيس طرفة زهير عنترة">
+<div class="sec-head" onclick="toggle(this)">المعلقات السبع <span class="arrow">▼</span></div>
+<div class="sec-body">
+<table><tr><th>الشاعر</th><th>مطلع المعلقة</th></tr>
+<tr><td><b>امرؤ القيس</b></td><td>قِفا نبكِ من ذكرى حبيبٍ ومنزلِ</td></tr>
+<tr><td><b>طرفة بن العبد</b></td><td>لخولةَ أطلالٌ ببرقةِ ثهمدِ</td></tr>
+<tr><td><b>زهير بن أبي سلمى</b></td><td>أمِن أمّ أوفى دمنةٌ لم تكلّمِ</td></tr>
+<tr><td><b>عنترة بن شداد</b></td><td>هل غادرَ الشعراءُ من متردّمِ</td></tr>
+<tr><td><b>عمرو بن كلثوم</b></td><td>ألا هُبّي بصحنكِ فاصبحينا</td></tr>
+<tr><td><b>الحارث بن حِلّزة</b></td><td>آذنتنا ببينها أسماءُ</td></tr>
+<tr><td><b>الأعشى</b></td><td>ودّع هريرة إنّ الركبَ مرتحلُ</td></tr>
+</table>
+</div>
+</div>
+
+<div class="section" data-keywords="الأغراض الشعرية غزل مدح هجاء رثاء فخر وصف حكمة">
+<div class="sec-head" onclick="toggle(this)">الأغراض الشعرية <span class="arrow">▼</span></div>
+<div class="sec-body">
+<div class="grid2">
+<div class="mini-card"><div class="icon">❤️</div><div class="label">الغزل</div><div class="desc">الحب والعشق (عفيف أو صريح)</div></div>
+<div class="mini-card"><div class="icon">👑</div><div class="label">المدح</div><div class="desc">ذكر الصفات الحميدة</div></div>
+<div class="mini-card"><div class="icon">😢</div><div class="label">الرثاء</div><div class="desc">رثاء الميت وذكر محاسنه</div></div>
+<div class="mini-card"><div class="icon">💪</div><div class="label">الفخر</div><div class="desc">الافتخار بالنفس أو القوم</div></div>
+<div class="mini-card"><div class="icon">🎨</div><div class="label">الوصف</div><div class="desc">وصف المشاهد والأشخاص</div></div>
+<div class="mini-card"><div class="icon">📖</div><div class="label">الحكمة</div><div class="desc">نصائح من تجارب الحياة</div></div>
+<div class="mini-card"><div class="icon">⚔️</div><div class="label">الهجاء</div><div class="desc">ذمّ شخص وإظهار عيوبه</div></div>
+<div class="mini-card"><div class="icon">🙏</div><div class="label">الاعتذار</div><div class="desc">طلب العفو والمسامحة</div></div>
+</div>
+</div>
+</div>
+
+<div class="section" data-keywords="قصائد مهمة عناوين">
+<div class="sec-head" onclick="toggle(this)">قصائد مهمة وأصحابها <span class="arrow">▼</span></div>
+<div class="sec-body">
+<table><tr><th>القصيدة</th><th>الشاعر</th></tr>
+<tr><td>قصيدة البُردة</td><td>البوصيري</td></tr>
+<tr><td>بانت سعاد</td><td>كعب بن زهير</td></tr>
+<tr><td>القصيدة المؤنسة</td><td>قيس بن الملوّح (مجنون ليلى)</td></tr>
+<tr><td>واحرّ قلباه</td><td>المتنبي</td></tr>
+<tr><td>أنشودة المطر</td><td>بدر شاكر السياب</td></tr>
+<tr><td>رثاء الأندلس</td><td>أبو البقاء الرندي</td></tr>
+<tr><td>إيوان كسرى</td><td>البحتري</td></tr>
+<tr><td>المواكب</td><td>جبران خليل جبران</td></tr>
+<tr><td>الخفاش والفراشة</td><td>أحمد شوقي</td></tr>
+</table>
+</div>
+</div>
+
+<div class="section" data-keywords="أسئلة أدبية ألقاب شعراء علماء">
+<div class="sec-head" onclick="toggle(this)">معلومات أدبية مهمة <span class="arrow">▼</span></div>
+<div class="sec-body">
+<table><tr><th>اللقب / المعلومة</th><th>الجواب</th></tr>
+<tr><td>أمير الشعراء</td><td><b>أحمد شوقي</b></td></tr>
+<tr><td>شاعر القطرين</td><td><b>خليل مطران</b></td></tr>
+<tr><td>شيخ النحاة</td><td><b>سيبويه</b></td></tr>
+<tr><td>شاعر الشعراء</td><td><b>امرؤ القيس</b></td></tr>
+<tr><td>عميد الأدب العربي</td><td><b>طه حسين</b></td></tr>
+<tr><td>واضع علم النحو</td><td><b>أبو الأسود الدؤلي</b></td></tr>
+<tr><td>مؤلف كتاب طبقات الشعر</td><td><b>محمد بن سالم الجمحي</b></td></tr>
+<tr><td>أول معجم في العربية</td><td><b>معجم العين (للخليل بن أحمد)</b></td></tr>
+<tr><td>الفنّ المحدث في الأندلس</td><td><b>الموشّحات الأندلسية</b></td></tr>
+<tr><td>النقائض (شعراء)</td><td><b>جرير والفرزدق (العصر الأموي)</b></td></tr>
+<tr><td>المدرسة الرومانسية</td><td><b>اهتمت بالذات والخيال</b></td></tr>
+<tr><td>القصة القصيرة تتسم بـ</td><td><b>التكثيف والوحدة</b></td></tr>
+</table>
+<div class="rule">
+<h4>العصور الأدبية بالترتيب:</h4>
+<span class="tag tag-blue">1. الجاهلي</span>
+<span class="tag tag-green">2. صدر الإسلام</span>
+<span class="tag tag-purple">3. الأموي</span>
+<span class="tag tag-orange">4. العباسي</span>
+<span class="tag tag-red">5. العصور المتأخرة</span>
+<span class="tag tag-teal">6. الحديث</span>
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- ═══════════════ الفصل الرابع: البلاغة ═══════════════ -->
+<div class="chapter ch4" id="ch4">
+<div class="ch-title">🎯 الفصل الرابع: البلاغة</div>
+
+<div class="section" data-keywords="التشبيه أركان مشبه مشبه به أداة وجه شبه">
+<div class="sec-head" onclick="toggle(this)">التشبيه <span class="arrow">▼</span></div>
+<div class="sec-body">
+<div class="formula">التشبيه = مشبّه + أداة تشبيه + مشبّه به + وجه الشبه</div>
+<div class="rule">
+مثال: <b>زيدٌ كالأسدِ في شجاعته</b><br>
+<span class="tag tag-blue">المشبّه</span> = زيد |
+<span class="tag tag-green">الأداة</span> = الكاف |
+<span class="tag tag-purple">المشبّه به</span> = الأسد |
+<span class="tag tag-orange">وجه الشبه</span> = الشجاعة
+</div>
+<div class="tip">التشبيه البليغ = حُذف منه الأداة ووجه الشبه (مثل: العلمُ نورٌ)</div>
+</div>
+</div>
+
+<div class="section" data-keywords="الاستعارة مكنية تصريحية">
+<div class="sec-head" onclick="toggle(this)">الاستعارة <span class="arrow">▼</span></div>
+<div class="sec-body">
+<div class="formula">الاستعارة = تشبيه بليغ حُذف أحد طرفيه</div>
+<div class="grid2">
+<div class="rule">
+<h4>الاستعارة التصريحية</h4>
+حُذف <b>المشبّه</b> وذُكر <b>المشبّه به</b><br>
+مثال: رأيتُ <span class="key">أسداً</span> في المعركة<br>
+(المقصود: رجل شجاع = حُذف وبقي "أسد")
+</div>
+<div class="rule purple">
+<h4>الاستعارة المكنية</h4>
+حُذف <b>المشبّه به</b> وبقيت قرينة من لوازمه<br>
+مثال: <span class="key">انطلق</span> القطار<br>
+(شُبّه القطار بحيوان يجري، حُذف الحيوان وبقي "انطلق" كقرينة)
+</div>
+</div>
+</div>
+</div>
+
+<div class="section" data-keywords="الكناية صفة موصوف نسبة">
+<div class="sec-head" onclick="toggle(this)">الكناية <span class="arrow">▼</span></div>
+<div class="sec-body">
+<div class="rule">
+<h4>الكناية = تعبير لا يُقصد معناه الحرفي بل معنى آخر مُلازم له</h4>
+</div>
+<table><tr><th>النوع</th><th>المثال</th><th>المعنى</th></tr>
+<tr><td><b>عن صفة</b></td><td>طويل النجاد</td><td>طول القامة والاعتزاز</td></tr>
+<tr><td><b>عن موصوف</b></td><td>ابن النيل</td><td>المصري</td></tr>
+<tr><td><b>عن نسبة</b></td><td>الكرم في داره</td><td>نسبة الكرم إلى أهل الدار</td></tr>
+</table>
+<div class="rule orange">
+<h4>كنايات مهمة:</h4>
+<span class="ex">الذهب الأسود</span> = النفط |
+<span class="ex">هادم اللذات</span> = الموت |
+<span class="ex">طويل الباع</span> = الأمر المقتدر عليه |
+<span class="ex">كثير الرماد</span> = الكرم |
+<span class="ex">مورم الأنف</span> = الغضب |
+<span class="ex">طويل الذيل</span> = الغني |
+<span class="ex">عريض القفا</span> = البلادة
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- ═══════════════ الفصل الخامس: معلومات عامة ═══════════════ -->
+<div class="chapter ch5" id="ch5">
+<div class="ch-title">📌 الفصل الخامس: معلومات لغوية عامة</div>
+
+<div class="section" data-keywords="همزة الوصل القطع">
+<div class="sec-head" onclick="toggle(this)">همزة الوصل وهمزة القطع <span class="arrow">▼</span></div>
+<div class="sec-body">
+<div class="grid2">
+<div class="rule">
+<h4>همزة الوصل (ا)</h4>
+تُنطق في البدء وتسقط في الوصل<br>
+<b>مواضعها:</b><br>
+- الأسماء العشرة: <span class="ex">ابن</span> <span class="ex">ابنة</span> <span class="ex">امرؤ</span> <span class="ex">امرأة</span> <span class="ex">اثنان</span> <span class="ex">اثنتان</span> <span class="ex">اسم</span><br>
+- أمر الثلاثي: <span class="ex">اكتبْ</span><br>
+- ماضي وأمر ومصدر الخماسي والسداسي: <span class="ex">استغفرَ</span><br>
+- (ال) التعريف
+</div>
+<div class="rule red">
+<h4>همزة القطع (أ / إ)</h4>
+تثبت في النطق دائماً<br>
+<b>مواضعها:</b><br>
+- جميع الحروف ما عدا (ال)<br>
+- الأفعال: ماضي الثلاثي والرباعي، المضارع، أمر ومصدر الرباعي<br>
+- جميع الأسماء ما عدا العشرة
+</div>
+</div>
+<div class="tip"><b>الطريقة السهلة:</b> ضع "واو" قبل الكلمة وانطقها. إذا نطقت الهمزة = قطع (وأكلَ). إذا لم تنطقها = وصل (واستغفرَ)</div>
+</div>
+</div>
+
+<div class="section" data-keywords="الهمزة المتوسطة كتابة">
+<div class="sec-head" onclick="toggle(this)">قواعد كتابة الهمزة المتوسطة <span class="arrow">▼</span></div>
+<div class="sec-body">
+<div class="formula">ترتيب الحركات من الأقوى: الكسرة ← الضمة ← الفتحة ← السكون</div>
+<div class="rule">
+<b>القاعدة:</b> ننظر إلى حركة الهمزة وحركة ما قبلها، ونكتبها على الحرف الذي يناسب الحركة الأقوى<br><br>
+<span class="tag tag-blue">الكسرة ← ياء (نبرة)</span> |
+<span class="tag tag-green">الضمة ← واو</span> |
+<span class="tag tag-purple">الفتحة ← ألف</span> |
+<span class="tag tag-red">السكون ← لا شيء</span><br><br>
+<b>أمثلة:</b><br>
+سُئِل = مكسورة + مضمومة (الكسرة أقوى) = على <b>ياء</b><br>
+يُؤْمن = ساكنة + مضمومة (الضمة أقوى) = على <b>واو</b><br>
+سَأَل = مفتوحة + مفتوحة = على <b>ألف</b>
+</div>
+</div>
+</div>
+
+<div class="section" data-keywords="علامات الترقيم نقطة فاصلة">
+<div class="sec-head" onclick="toggle(this)">علامات الترقيم <span class="arrow">▼</span></div>
+<div class="sec-body">
+<table><tr><th>العلامة</th><th>الاستخدام</th></tr>
+<tr><td><b>النقطة (.)</b></td><td>نهاية الجملة التامة</td></tr>
+<tr><td><b>الفاصلة (،)</b></td><td>بين الجمل القصيرة المتصلة المعنى</td></tr>
+<tr><td><b>الفاصلة المنقوطة (؛)</b></td><td>بين جملتين الثانية نتيجة للأولى</td></tr>
+<tr><td><b>النقطتان (:)</b></td><td>قبل التوضيح أو ذكر أقوال</td></tr>
+<tr><td><b>علامة الاستفهام (؟)</b></td><td>نهاية الجملة الاستفهامية</td></tr>
+<tr><td><b>علامة التعجب (!)</b></td><td>بعد التعجب أو الانفعال</td></tr>
+<tr><td><b>الشرطة (-)</b></td><td>الجملة الاعتراضية / المحذوف</td></tr>
+<tr><td><b>الأقواس ()</b></td><td>معلومات إضافية أو شرح</td></tr>
+</table>
+</div>
+</div>
+
+<div class="section" data-keywords="أصوات الحيوانات">
+<div class="sec-head" onclick="toggle(this)">أصوات الحيوانات والأشياء <span class="arrow">▼</span></div>
+<div class="sec-body">
+<div class="grid2">
+<div class="rule">
+<h4>الحيوانات:</h4>
+<span class="ex">الأسد ← زئير</span>
+<span class="ex">الذئب ← عُواء</span>
+<span class="ex">الحصان ← صهيل</span>
+<span class="ex">الجمل ← رُغاء</span>
+<span class="ex">الكلب ← نُباح</span>
+<span class="ex">القط ← مواء</span>
+<span class="ex">العصفور ← زقزقة</span>
+<span class="ex">البلبل ← تغريد</span>
+<span class="ex">الغراب ← نعيب</span>
+<span class="ex">الثعبان ← فحيح</span>
+<span class="ex">النحلة ← طنين</span>
+<span class="ex">الحمار ← نهيق</span>
+<span class="ex">الضفدع ← نقيق</span>
+</div>
+<div class="rule green">
+<h4>الأشياء:</h4>
+<span class="ex">الريح ← هفيف/هزيز</span>
+<span class="ex">الرعد ← هزيم</span>
+<span class="ex">الماء ← خرير</span>
+<span class="ex">النار ← حسيس</span>
+<span class="ex">السيف ← صليل</span>
+<span class="ex">الباب ← صرير</span>
+<span class="ex">القلب ← خفقان</span>
+<span class="ex">الأسنان ← صرير</span>
+<span class="ex">العظام ← قضقضة</span>
+<span class="ex">الضاحك ← قهقهة</span>
+<span class="ex">الجرس ← رنين</span>
+<span class="ex">النائم ← شخير</span>
+</div>
+</div>
+</div>
+<div class="section" data-keywords="العدد المعدود الأرقام كتابة الأعداد تذكير تأنيث">
+<div class="sec-head" onclick="toggle(this)">كتابة الأرقام باللغة العربية (العدد والمعدود) <span class="arrow">▼</span></div>
+<div class="sec-body">
+
+<div class="rule red">
+<h4>القاعدة الذهبية: العدد والمعدود</h4>
+العددان <b>1 و 2</b> ← يوافقان المعدود (تذكيراً وتأنيثاً)<br>
+الأعداد <b>3 إلى 10</b> ← تخالف المعدود<br>
+الأعداد <b>11 إلى 19</b> ← قواعد خاصة<br>
+ألفاظ العقود <b>20 - 90</b> ← لا تتغير
+</div>
+
+<table><tr><th>العدد</th><th>القاعدة</th><th>مع المذكر</th><th>مع المؤنث</th></tr>
+<tr><td><b>1 - 2</b></td><td><span class="tag tag-green">يوافق المعدود</span></td><td>رجلٌ <b>واحدٌ</b> / رجلان <b>اثنان</b></td><td>امرأةٌ <b>واحدةٌ</b> / امرأتان <b>اثنتان</b></td></tr>
+<tr><td><b>3 - 9</b></td><td><span class="tag tag-red">يخالف المعدود</span></td><td><b>ثلاثةُ</b> رجالٍ (بالتاء)</td><td><b>ثلاثُ</b> نساءٍ (بدون تاء)</td></tr>
+<tr><td><b>10</b></td><td><span class="tag tag-red">يخالف مع المفرد</span></td><td><b>عشرةُ</b> رجالٍ</td><td><b>عشرُ</b> نساءٍ</td></tr>
+<tr><td><b>11</b></td><td><span class="tag tag-green">الجزءان يوافقان</span></td><td><b>أحدَ عشرَ</b> رجلاً</td><td><b>إحدى عشرةَ</b> امرأةً</td></tr>
+<tr><td><b>12</b></td><td><span class="tag tag-green">الجزءان يوافقان</span></td><td><b>اثنا عشرَ</b> رجلاً</td><td><b>اثنتا عشرةَ</b> امرأةً</td></tr>
+<tr><td><b>13 - 19</b></td><td><span class="tag tag-purple">الأول يخالف + الثاني يوافق</span></td><td><b>ثلاثةَ عشرَ</b> رجلاً</td><td><b>ثلاثَ عشرةَ</b> امرأةً</td></tr>
+<tr><td><b>20 - 90</b></td><td><span class="tag tag-blue">ألفاظ العقود لا تتغير</span></td><td><b>عشرون</b> رجلاً</td><td><b>عشرون</b> امرأةً</td></tr>
+<tr><td><b>100، 1000</b></td><td><span class="tag tag-blue">لا تتغير</span></td><td><b>مئةُ</b> رجلٍ / <b>ألفُ</b> رجلٍ</td><td><b>مئةُ</b> امرأةٍ / <b>ألفُ</b> امرأةٍ</td></tr>
+</table>
+
+<div class="rule green">
+<h4>تمييز العدد (المعدود):</h4>
+<span class="tag tag-blue">3 - 10</span> → المعدود <b>جمع مجرور</b> (ثلاثةُ كتبٍ)<br>
+<span class="tag tag-green">11 - 99</span> → المعدود <b>مفرد منصوب</b> (خمسةَ عشرَ كتاباً)<br>
+<span class="tag tag-purple">100، 1000 ومضاعفاتها</span> → المعدود <b>مفرد مجرور</b> (مئةُ كتابٍ)
+</div>
+
+<div class="rule orange">
+<h4>إعراب العدد:</h4>
+<span class="tag tag-blue">1 - 2</span> → نعت يتبع المنعوت في الإعراب<br>
+<span class="tag tag-green">3 - 10</span> → مضاف والمعدود مضاف إليه مجرور<br>
+<span class="tag tag-purple">11 - 12</span> → مبني على الفتح (أحدَ عشرَ)<br>
+<span class="tag tag-red">13 - 19</span> → الأول مضاف + الثاني مبني على الفتح<br>
+<span class="tag tag-orange">20 - 90</span> → يُعرب حسب موقعه (ملحق بجمع المذكر)
+</div>
+
+<div class="rule purple">
+<h4>كتابة الأعداد بالحروف:</h4>
+<span class="ex">1 = واحد/واحدة</span>
+<span class="ex">2 = اثنان/اثنتان</span>
+<span class="ex">3 = ثلاثة/ثلاث</span>
+<span class="ex">4 = أربعة/أربع</span>
+<span class="ex">5 = خمسة/خمس</span>
+<span class="ex">6 = ستة/ست</span>
+<span class="ex">7 = سبعة/سبع</span>
+<span class="ex">8 = ثمانية/ثماني</span>
+<span class="ex">9 = تسعة/تسع</span>
+<span class="ex">10 = عشرة/عشر</span>
+<span class="ex">11 = أحد عشر/إحدى عشرة</span>
+<span class="ex">12 = اثنا عشر/اثنتا عشرة</span>
+<span class="ex">20 = عشرون</span>
+<span class="ex">30 = ثلاثون</span>
+<span class="ex">100 = مئة/مائة</span>
+<span class="ex">1000 = ألف</span>
+</div>
+
+<div class="tip"><b>طريقة سهلة للحفظ:</b> الأعداد 3-10 "عنيدة" تخالف المعدود دائماً! (إذا المعدود مذكر → العدد بالتاء، والعكس). أما 1 و 2 فـ"مطيعان" يوافقان المعدود.</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+ملخص الملزمة الذهبية - إعداد الأستاذ ضياء العامري | تحويل إلى كود: المهندس وارث العوادي<br>
+<a href="index.html" style="color:var(--p);text-decoration:none;font-weight:700">← الرجوع لنماذج الامتحان</a>
+</div>
+
+<script>
+function toggle(el){
+    el.classList.toggle('open');
+    const body=el.nextElementSibling;
+    body.classList.toggle('show');
+}
+
+function filterSections(query){
+    const q=query.trim().toLowerCase();
+    document.querySelectorAll('.section').forEach(s=>{
+        const keywords=(s.dataset.keywords||'').toLowerCase();
+        const text=s.textContent.toLowerCase();
+        s.style.display=(!q||keywords.includes(q)||text.includes(q))?'':'none';
+    });
+}
+
+document.querySelectorAll('.nav a').forEach(a=>{
+    a.addEventListener('click',function(e){
+        document.querySelectorAll('.nav a').forEach(x=>x.classList.remove('active'));
+        this.classList.add('active');
+    });
+});
+
+document.querySelectorAll('.sec-head').forEach(h=>{
+    if(window.innerWidth>768){
+        h.classList.add('open');
+        h.nextElementSibling.classList.add('show');
+    }
+});
+</script>
+</body>
+</html>
